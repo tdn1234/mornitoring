@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from queue.queue_config import queue
+from queue_config.queue_config import queue
 from tasks.tasks import process_order
 from rq import Retry
 
